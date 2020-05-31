@@ -6,12 +6,32 @@
         styleManager: {clearProperties: 1},
         upload: 0,
         style: '.txt-red{color: red}',
-        plugins: ['gjs-preset-webpage', 'grapesjs-lory-slider', 'grapesjs-tabs'],
+        plugins: ['gjs-preset-webpage', 'grapesjs-lory-slider', 'grapesjs-tabs', 'grapesjs-custom-code', 'gjs-plugin-ckeditor', 'grapesjs-tui-image-editor'],
         pluginsOpts: {
             'grapesjs-lory-slider': {
                 sliderBlock: {
                     category: 'Extra'
                 }
+            },
+            'grapesjs-custom-code': {
+                blockCustomCode: {
+                   category: 'Extra'
+                }
+            },
+            'grapesjs-tui-image-editor': {
+                config: {
+                    includeUI: {
+                        initMenu: 'filter',
+                    },
+                },
+                icons: {
+                    'menu.normalIcon.path': '../icon-d.svg',
+                    'menu.activeIcon.path': '../icon-b.svg',
+                    'menu.disabledIcon.path': '../icon-a.svg',
+                    'menu.hoverIcon.path': '../icon-c.svg',
+                    'submenu.normalIcon.path': '../icon-d.svg',
+                    'submenu.activeIcon.path': '../icon-c.svg',
+                },
             },
             'grapesjs-tabs': {
                 tabsBlock: {

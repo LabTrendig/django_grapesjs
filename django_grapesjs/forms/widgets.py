@@ -18,21 +18,23 @@ class GrapesJsWidget(forms.Textarea):
     class Media:
         css = {
             'all': (
-                'css/django_grapesjs/grapes.min.css',
-                'css/django_grapesjs/grapesjs-preset-newsletter.css',
+                'dist/css/grapes.min.css',
+                'css/grapesjs-preset-newsletter.css',
                 'css/django_grapesjs/grapesjs-preset-webpage.min.css',
                 'css/django_grapesjs/grapesjs-plugin-filestack.css',
             )
         }
         js = [
             'js/django_grapesjs/feather-aviary-editor.js',
-            'js/django_grapesjs/grapes.js',
+            'dist/grapes.js',
             'js/django_grapesjs/grapesjs-aviary.min.js',
-            'js/django_grapesjs/grapesjs-preset-newsletter.min.js',
+            'js/grapesjs-preset-newsletter.min.js',
             'js/django_grapesjs/grapesjs-preset-webpage.min.js',
             'js/django_grapesjs/grapesjs-lory-slider.min.js',
             'js/django_grapesjs/grapesjs-tabs.min.js',
             'js/django_grapesjs/grapesjs-plugin-filestack.min.js',
+            'js/grapesjs-custom-code.min.js',
+            'js/grapesjs-tui-image-editor.min.js',
         ]
 
     def get_formatted_id_value(self, value_id):
