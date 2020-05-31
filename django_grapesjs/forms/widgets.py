@@ -18,7 +18,7 @@ class GrapesJsWidget(forms.Textarea):
     class Media:
         css = {
             'all': (
-                'dist/css/grapes.min.css',
+                'css/grapes.min.css',
                 'css/grapesjs-preset-newsletter.css',
                 'css/django_grapesjs/grapesjs-preset-webpage.min.css',
                 'css/django_grapesjs/grapesjs-plugin-filestack.css',
@@ -26,7 +26,7 @@ class GrapesJsWidget(forms.Textarea):
         }
         js = [
             'js/django_grapesjs/feather-aviary-editor.js',
-            'dist/grapes.js',
+            'js/grapes.js',
             'js/django_grapesjs/grapesjs-aviary.min.js',
             'js/grapesjs-preset-newsletter.min.js',
             'js/django_grapesjs/grapesjs-preset-webpage.min.js',
