@@ -9,13 +9,13 @@ def read(fname):
 
 
 setup(
-    name = 'django_grapesjs',
+    name = 'django3_grapesjs',
     packages = find_packages(exclude=('example*',)),
     include_package_data = True,
     version = __version__,
     description = 'A small library for integrating the page builder "grapesjs" into django admin',
     author = 'Mark Burkut',
-    author_email = 'burkut888mark@gmail.com',
+    author_email = 'josuedjh456@gmail.com',
     url = 'https://github.com/gulliverbms/django_grapesjs',
     long_description = read('README.rst'),
     long_description_content_type = 'text/x-rst',
