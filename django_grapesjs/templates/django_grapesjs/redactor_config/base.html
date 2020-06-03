@@ -1,7 +1,56 @@
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i);
+
+@font-face {
+    font-family: 'Nordique-Pro-Regular';
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Regular.eot);
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Regular.eot?#iefix) format("embedded-opentype"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Regular.woff2) format("woff2"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Regular.woff) format("woff"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'Nordique-Pro-Light';
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Light.eot);
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Light.eot?#iefix) format("embedded-opentype"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Light.woff2) format("woff2"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Light.woff) format("woff"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'Nordique-Pro-Semibold';
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.eot);
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.eot?#iefix) format("embedded-opentype"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.woff2) format("woff2"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.woff) format("woff"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'Nordique-Pro-Semibold';
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.eot);
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.eot?#iefix) format("embedded-opentype"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.woff2) format("woff2"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.woff) format("woff"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Semibold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'Nordique-Pro-Bold';
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Bold.eot);
+    src: url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Bold.eot?#iefix) format("embedded-opentype"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Bold.woff2) format("woff2"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Bold.woff) format("woff"),
+    url(https://trendig-prod-docker.s3.amazonaws.com/media/fonts/Nordique-Pro-Bold.ttf) format("truetype")
+}
+</style>
 
 <script type="text/javascript">
     var initData{{ widget.attrs.id }} = {
         weight: '150%',
+        noticeOnUnload: 0,
         showOffsets: 1,
         styleManager: {clearProperties: 1},
         upload: 0,
@@ -80,7 +129,18 @@
                     open: false,
                     buildProps: ['font-family', 'font-size', 'font-weight', 'letter-spacing', 'color', 'line-height', 'text-align', 'text-decoration', 'text-shadow'],
                     properties: [
-                        {name: 'Font', property: 'font-family'},
+                        {
+                            name: 'Font',
+                            property: 'font-family',
+                            list: [
+                                {name: 'Nordique-Pro-Regular', value: 'Nordique-Pro-Regular, sans-serif',},
+                                {name: 'Nordique-Pro-Light', value: 'Nordique-Pro-Light, sans-serif'},
+                                {name: 'Nordique-Pro-Semibold', value: 'Nordique-Pro-Semibold, sans-serif'},
+                                {name: 'Nordique-Pro-Semibold', value: 'Nordique-Pro-Semibold, sans-serif'},
+                                {name: 'Nordique-Pro-Bold', value: 'Nordique-Pro-Bold, sans-serif'},
+
+                            ]
+                        },
                         {name: 'Weight', property: 'font-weight'},
                         {name: 'Font color', property: 'color'},
                         {
