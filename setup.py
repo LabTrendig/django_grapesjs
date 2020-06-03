@@ -9,7 +9,7 @@ def read(fname):
 
 
 setup(
-    name = 'django3_grapesjs',
+    name = 'django_grapesjs',
     packages = find_packages(exclude=('example*',)),
     include_package_data = True,
     version = __version__,
