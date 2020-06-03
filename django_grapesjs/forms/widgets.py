@@ -20,8 +20,8 @@ class GrapesJsWidget(forms.Textarea):
             'all': (
                 'css/grapes.min.css',
                 'css/grapesjs-preset-newsletter.css',
-                'css/django_grapesjs/grapesjs-preset-webpage.min.css',
-                'css/django_grapesjs/grapesjs-plugin-filestack.css',
+                'css/grapesjs-preset-webpage.min.css',
+                'css/grapesjs-plugin-filestack.css',
             )
         }
         js = [
@@ -29,10 +29,10 @@ class GrapesJsWidget(forms.Textarea):
             'js/grapes.js',
             'js/django_grapesjs/grapesjs-aviary.min.js',
             'js/grapesjs-preset-newsletter.min.js',
-            'js/django_grapesjs/grapesjs-preset-webpage.min.js',
+            'js/grapesjs-preset-webpage.min.js',
             'js/django_grapesjs/grapesjs-lory-slider.min.js',
             'js/django_grapesjs/grapesjs-tabs.min.js',
-            'js/django_grapesjs/grapesjs-plugin-filestack.min.js',
+            'js/grapesjs-plugin-filestack.min.js',
             'js/grapesjs-custom-code.min.js',
             'js/grapesjs-tui-image-editor.min.js',
         ]
